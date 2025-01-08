@@ -12,6 +12,7 @@
             crossorigin="anonymous">
         <link rel="stylesheet" href="header_footer.css">
         <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="Dat_Ban.css">
         <script src="https://kit.fontawesome.com/307c0f0e1d.js"
             crossorigin="anonymous"></script>
     </head>
@@ -35,32 +36,124 @@
                 </div>
                 <div class="login">
                     <ul class="login-content">
-                        <li id="login"><a href="javascript:void(0);" onclick="openLoginForm()">Đăng nhập</a></li>
-                        <li id="username"><a href="javascript:void(0);"></a></li>|
-                        <li id="register"><a href="javascript:void(0);" onclick="openRegisterForm()">Đăng ký</a></li>
-                        <li id="logout"><a href="javascript:void(0);" onclick="logoutAccount()">Đăng xuất</a></li>
+                        <li id="login"><a href="javascript:void(0);"
+                                onclick="openLoginForm()">Đăng nhập</a></li>
+                        <li id="username"><a
+                                href="javascript:void(0);"></a></li>|
+                        <li id="register"><a href="javascript:void(0);"
+                                onclick="openRegisterForm()">Đăng ký</a></li>
+                        <li id="logout"><a href="javascript:void(0);"
+                                onclick="logoutAccount()">Đăng xuất</a></li>
                     </ul>
                 </div>
             </div>
         </header>
         <main>
+            <!--Đặt bàn-->
+            <div class="set-table">
+                <div class="st-info">
+                    <h2>Set Table</h2>
+                    <p>Quý khách vui lòng đặt bàn trước để có những trải nghiệm
+                        tại tốt nhất tại HAM PALACE.</p>
+                    <p>Gợi ý đặt bàn:</p>
+                    <div class="suggest">
+                        <i class="fas fa-angle-right"></i> Đi 1 người: Đặt
+                        bàn đơn.
+                        <hr>
+                        <i class="fas fa-angle-right"></i> Đi 2 người: Đặt
+                        bàn đôi.
+                        <hr>
+                        <i class="fas fa-angle-right"></i> Đi nhóm 4-6
+                        người:
+                        Đặt bàn 6 người.
+                        <hr>
+                        <i class="fas fa-angle-right"></i> Đi nhóm 6-12
+                        người: Đặt bàn dài.
+                        <hr>
+                        <i class="fas fa-angle-right"></i> Đi nhóm >12
+                        người: Gọi trực tiếp Hotline: 0909.009.090
+                        <hr>
+                    </div>
+                </div>
+                <form action class="st-form">
+                    <input class="name" type="text"
+                        placeholder="Tên của bạn ....">
+                    <input class="phone-number" type="text"
+                        placeholder="Số điện thoại ...">
+                    <input class="number-people" type="text"
+                        placeholder="Số người ăn ....">
+                    <input class="date" type="date"
+                        placeholder="dd/mm/yyyy">
+                    <div class="time">
+                        <div class="li"><input type="checkbox"> 8:00
+                            &nbsp;</div>
+                        <div class="li"><input type="checkbox"> 8:30
+                            &nbsp;</div>
+                        <div class="li"><input type="checkbox"> 9:00
+                            &nbsp;</div>
+                        <div class="li"><input type="checkbox"> 9:30
+                            &nbsp;</div>
+                        <div class="li"><input type="checkbox"> 10:00</div>
+                        <div class="li"><input type="checkbox"> 10:30</div>
+                    </div>
+                    <div class="time">
+                        <div class="li"><input type="checkbox"> 11:00</div>
+                        <div class="li"><input type="checkbox"> 11:30</div>
+                        <div class="li"><input type="checkbox"> 12:00</div>
+                        <div class="li"><input type="checkbox"> 12:30</div>
+                        <div class="li"><input type="checkbox"> 13:00</div>
+                        <div class="li"><input type="checkbox"> 13:30</div>
+                    </div>
+                    <div class="time">
+                        <div class="li"><input type="checkbox"> 14:00</div>
+                        <div class="li"><input type="checkbox"> 14:30</div>
+                        <div class="li"><input type="checkbox"> 15:00</div>
+                        <div class="li"><input type="checkbox"> 15:30</div>
+                        <div class="li"><input type="checkbox"> 16:00</div>
+                        <div class="li"><input type="checkbox"> 16:30</div>
+                    </div>
+                    <div class="time">
+                        <div class="li"><input type="checkbox"> 17:00</div>
+                        <div class="li"><input type="checkbox"> 17:30</div>
+                        <div class="li"><input type="checkbox"> 18:00</div>
+                        <div class="li"><input type="checkbox"> 18:30</div>
+                        <div class="li"><input type="checkbox"> 19:00</div>
+                        <div class="li"><input type="checkbox"> 19:30</div>
+                    </div>
+                    <div class="time">
+                        <div class="li"><input type="checkbox"> 20:00</div>
+                        <div class="li"><input type="checkbox"> 20:30</div>
+                        <div class="li"><input type="checkbox"> 21:00</div>
+                        <div class="li"><input type="checkbox"> 21:30</div>
+                    </div>
+                    <button>ĐẶT BÀN</button>
+                </form>
+            </div>
+            <!--Đăng ký - Đăng nhập-->
             <div class="login-overlay" id="loginOverlayForm">
                 <div class="login-container">
                     <img src="anh_nha_hang/icon.jpg"
                         style="width: 100px;"
                         alt="icon_nha_hang">
-                    <button class="close-button-login" onclick="closeLoginForm()">x</button>
+                    <button class="close-button-login"
+                        onclick="closeLoginForm()">x</button>
                     <!-- <h2>Đăng nhập</h2> -->
-                    <form class="login-form" action="" id="loginForm">
-                        <input type="text" id="loginUsername" name="username" placeholder="Tên đăng nhập" required>
-                        <input type="password" id="loginPassword" name="password" placeholder="Mật khẩu" required>
+                    <form class="login-form" action id="loginForm">
+                        <input type="text" id="loginUsername" name="username"
+                            placeholder="Tên đăng nhập" required>
+                        <input type="password" id="loginPassword"
+                            name="password" placeholder="Mật khẩu" required>
                         <input type="checkbox" id="remember" name="remember">
                         <label for="remember"> Remember me</label><br><br><br>
-                        <button type="submit" id="loginButton">Đăng nhập</button><br><br>
-                        <a href="javascript:void(0);" id="changeToReg" onclick="changeToRegisterForm()">Bạn chưa có tài khoản?</a>
-                        <a href="javascript:void(0);" id="forgetPassword" onclick="changeToRegisterForm()">Quên mật khẩu?</a>
+                        <button type="submit" id="loginButton">Đăng
+                            nhập</button><br><br>
+                        <a href="javascript:void(0);" id="changeToReg"
+                            onclick="changeToRegisterForm()">Bạn chưa có tài
+                            khoản?</a>
+                        <a href="javascript:void(0);" id="forgetPassword"
+                            onclick="changeToRegisterForm()">Quên mật khẩu?</a>
                     </form>
-                    
+
                 </div>
             </div>
 
@@ -69,13 +162,20 @@
                     <img src="anh_nha_hang/icon.jpg"
                         style="width: 100px;"
                         alt="icon_nha_hang">
-                    <button class="close-button-register" onclick="closeRegisterForm()">x</button>
+                    <button class="close-button-register"
+                        onclick="closeRegisterForm()">x</button>
                     <!-- <h2>Đăng ký</h2> -->
-                    <form class="register-form" action="">
-                        <input type="text" id="registerUsername" name="username" placeholder="Tên đăng nhập" required>
-                        <input type="password" id="registerPassword" name="password" placeholder="Mật khẩu" required>
-                        <input type="password" id="confirmPassword" name="confirm-password" placeholder="Nhập lại mật khẩu" required>
-                        <input type="tel" id="phone" name="phone" placeholder="Số điện thoại" pattern="[0-9]{10}" required>
+                    <form class="register-form" action>
+                        <input type="text" id="registerUsername" name="username"
+                            placeholder="Tên đăng nhập" required>
+                        <input type="password" id="registerPassword"
+                            name="password" placeholder="Mật khẩu" required>
+                        <input type="password" id="confirmPassword"
+                            name="confirm-password"
+                            placeholder="Nhập lại mật khẩu" required>
+                        <input type="tel" id="phone" name="phone"
+                            placeholder="Số điện thoại" pattern="[0-9]{10}"
+                            required>
                         <button type="submit">Đăng ký</button>
                     </form>
                 </div>

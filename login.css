@@ -32,11 +32,11 @@
     color: #888;
     top: 5px;
     right: 15px;
-    cursor: pointer; 
-    position: absolute;  
+    cursor: pointer;
+    position: absolute;
 }
 
-.close-button-login:hover, 
+.close-button-login:hover,
 .close-button-register:hover {
     color: black;
 }
@@ -67,7 +67,8 @@
     color: #f3e385;
 }
 
-#username, #logout {
+#username,
+#logout {
     display: none;
 }
 

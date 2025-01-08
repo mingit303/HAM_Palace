@@ -1,0 +1,60 @@
+/* Tạo lớp phủ tối cho nền */
+.set-table {
+    position: relative;
+    background: url('anh_nha_hang/anh8.jpg') center / cover no-repeat;
+    display: flex;
+    color: white;
+    overflow: hidden;
+}
+
+/* Lớp phủ tối */
+.set-table::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* Màu đen với độ trong suốt */
+    z-index: 1;
+    /* Đặt lớp phủ phía dưới nội dung */
+}
+
+/* Nội dung chính */
+.set-table .st-info,
+.set-table .st-form {
+    position: relative;
+    /* Giúp nội dung nằm trên lớp phủ */
+    z-index: 2;
+    /* Đảm bảo nội dung nổi trên lớp phủ */
+    width: 50%;
+    margin: 30px;
+}
+
+.set-table .st-form .form {
+    margin-bottom: 20px;
+}
+
+.name,
+.phone-number,
+.date,
+.number-people {
+    width: 90%;
+    height: 35px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.set-table .st-form .time .li {
+    display: inline;
+    margin-right: 25px;
+}
+
+.set-table .st-form button {
+    border-radius: 6px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #FFF6B3;
+}
