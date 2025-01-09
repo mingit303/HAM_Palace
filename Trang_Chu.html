@@ -46,7 +46,7 @@
         <main>
             <div class="login-overlay" id="loginOverlayForm">
                 <div class="login-container">
-                    <img src="anh_nha_hang/icon.jpg"
+                    <img id="form-img" src="anh_nha_hang/icon.jpg"
                         style="width: 100px;"
                         alt="icon_nha_hang">
                     <button class="close-button-login" onclick="closeLoginForm()">x</button>
@@ -54,11 +54,15 @@
                     <form class="login-form" action="" id="loginForm">
                         <input type="text" id="loginUsername" name="username" placeholder="Tên đăng nhập" required>
                         <input type="password" id="loginPassword" name="password" placeholder="Mật khẩu" required>
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember"> Remember me</label><br><br><br>
-                        <button type="submit" id="loginButton">Đăng nhập</button><br><br>
-                        <a href="javascript:void(0);" id="changeToReg" onclick="changeToRegisterForm()">Bạn chưa có tài khoản?</a>
+                        <div class="remember-checkbox">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember"> Remember me</label>
+                        </div>
+                        <button type="submit" id="loginButton">Đăng nhập</button>
+                        <div class="form-navigation">
+                            <a href="javascript:void(0);" id="changeToReg" onclick="changeToRegisterForm()">Bạn chưa có tài khoản?</a>
                         <a href="javascript:void(0);" id="forgetPassword" onclick="changeToRegisterForm()">Quên mật khẩu?</a>
+                        </div>
                     </form>
                     
                 </div>
