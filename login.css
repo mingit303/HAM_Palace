@@ -84,7 +84,6 @@
 }
 
 .login-form label {
-    user-select: none;        
+    user-select: none;
     cursor: pointer;
 }
-
