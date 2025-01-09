@@ -58,7 +58,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 .login-form button:hover,
@@ -72,16 +72,19 @@
     display: none;
 }
 
-.login-form {
-    position: relative;
+.remember-checkbox {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
 }
 
-input[type="checkbox"] {
+#remember {
     width: 5%;
-    margin: 2% 0;
-    float: inline-start;
+    margin: 2px 0 0 0;
 }
 
 .login-form label {
-    float: inline-start;
+    user-select: none;        
+    cursor: pointer;
 }
+
