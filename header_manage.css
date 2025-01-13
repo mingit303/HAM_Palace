@@ -1,0 +1,74 @@
+.header-manage {
+    background-color: #000;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.manage-container .manage-container {
+    list-style-type: none;
+    font-size: 18px;
+    display: flex;
+}
+
+.manage-container li a {
+    line-height: 50px;
+    padding: 0 24px;
+}
+
+.header-manage .manage-container .manage-staff {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-manage .manage-container .manage-staff li a {
+    color: #000;
+}
+
+.manage-container li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 0 32px;
+}
+
+.manage-container>li :hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.manage-container>li {
+    display: inline-block;
+    position: relative;
+}
+
+.manage-container li:hover .manage-staff {
+    display: block;
+}
+
+.manage-container>li:hover>a {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+.manage-container li a {
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+.manage-container .manage-staff li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
