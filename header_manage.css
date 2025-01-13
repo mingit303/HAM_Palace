@@ -19,6 +19,8 @@
 .manage-container li a {
     line-height: 50px;
     padding: 0 24px;
+    color: #fff;
+
 }
 
 .header-manage .manage-container .manage-staff {
@@ -36,14 +38,8 @@
 
 .manage-container li a {
     text-decoration: none;
-    color: #fff;
     display: block;
     padding: 0 32px;
-}
-
-.manage-container>li :hover {
-    background-color: #ccc;
-    color: #000;
 }
 
 .manage-container>li {
@@ -59,7 +55,6 @@
     color: #000;
     background-color: #ccc;
 }
-
 
 .manage-container li a {
     display: block;
