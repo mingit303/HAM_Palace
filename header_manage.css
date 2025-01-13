@@ -10,7 +10,7 @@
     z-index: 1;
 }
 
-.manage-container .manage-container {
+.manage-container {
     list-style-type: none;
     font-size: 18px;
     display: flex;
@@ -27,6 +27,7 @@
     list-style-type: none;
     position: absolute;
     top: 100%;
+    width: 100%;
     display: none;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -35,11 +36,10 @@
 .header-manage .manage-container .manage-staff li a {
     color: #000;
 }
-
-.manage-container li a {
-    text-decoration: none;
+.manage-staff a{
+    color:#000;
     display: block;
-    padding: 0 32px;
+    text-decoration: none;
 }
 
 .manage-container>li {
@@ -47,23 +47,16 @@
     position: relative;
 }
 
-.manage-container li:hover .manage-staff {
+ .manage-container li:hover .manage-staff {
     display: block;
 }
 
-.manage-container>li:hover>a {
-    color: #000;
-    background-color: #ccc;
-}
-
-.manage-container li a {
+.manage-container>li>a{
     display: block;
     line-height: 46px;
     padding: 0 24px;
+    color: #fff;
     text-decoration: none;
 }
 
-.manage-container .manage-staff li:hover a {
-    color: #000;
-    background-color: #ccc;
-}
+
