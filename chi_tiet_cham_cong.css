@@ -1,0 +1,43 @@
+.detail-body {
+    margin: 70px 50px;
+}
+
+.detail-title {
+    color: white;
+    background-color: black;
+    padding: 10px 15px;
+}
+
+.detail-container {
+    display: flex;
+    justify-content: start;
+}
+
+.detail-year, .detail-month, .detail-status {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+.detail-status {
+    display: flex;
+    justify-content: start;
+}
+
+.detail-status-title {
+    padding-right: 10px;
+}
+
+.time-counter {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.active, .inactive {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+input[type="number"] {
+    width: 75px;
+}

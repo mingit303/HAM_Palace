@@ -1,0 +1,66 @@
+.table-container {
+    margin: 70px 50px;
+    
+}
+
+.table-title {
+    padding: 10px 15px;
+    color: white;
+    font-size: 18px;
+    background-color: grey;
+}
+
+.table-content {
+    padding: 0px 10px 10px;
+
+}
+
+.btn {
+    color: white;
+    background-color: black;
+}
+
+.btn:hover {
+  color: yellow;
+  background-color: black;
+}
+
+.dropdown-header {
+  margin-right: 10px;
+}
+
+.dropdown-year {
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+.form-select {
+  cursor: pointer;
+}
+select.form-select {
+  appearance: none ;
+  background-image: none ; 
+}
+
+.rotate-up {
+  transform: rotate(180deg);
+  transition: transform 0.000125s ease;
+}
+.rotate-down {
+  transform: rotate(0deg);
+  transition: transform 0.000125s ease;
+}
+
+#dropdownIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.fa-lock, .fa-lock-open , .fa-pen{
+  color: black;
+}
